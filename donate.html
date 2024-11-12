@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Donate - REACH</title>
+</head>
+<body class="get-involved">
+    <header>
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="REACH Logo" class="logo">
+        </div>
+        <h1>Support Our Mission</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="donate.html">Get Involved</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="donate-section">
+            <h2>Make a Donation</h2>
+            <p>Your support helps us empower communities and create lasting change. Choose an amount to donate below:</p>
+
+            <form id="donation-form">
+                <label for="donation-amount">Donation Amount:</label>
+                <select id="donation-amount" name="amount">
+                    <option value="10">R10</option >
+                    <option value="50">R50</option>
+                    <option value="100">R100</option>
+                    <option value="200">R200</option>
+                    <option value="custom">Custom Amount</option>
+                </select>
+                <div id="custom-amount-container" style="display: none;">
+                    <label for="custom-amount">Enter Custom Amount:</label>
+                    <input type="number" id="custom-amount" name="custom-amount" placeholder="Enter amount" min="1" />
+                </div>
+                <button type="button" id="donate-button" class="button" onclick="window.location.href='pay.html'">Donate Now</button>
+            </form>
+            <div id="payment-status"></div>
+        </section>
+    </main>
+
+    <footer>
+        <footer>
+           
+            <p>&copy; 2024 REACH Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="donate.js"></script>
+</body>
+</html>
